@@ -11,3 +11,5 @@ Target repository for goopter_ticket_orchestra end-to-end runs. Agents branch fr
 | `"es"`   | `¡Hola, <name>!`    | `¡Adiós, <name>!`     |
 
 `locale` defaults to `"en"`. Only the lowercase codes above are supported. Any other value, including region tags such as `"es-MX"`, uppercase codes such as `"FR"`, the empty string and `null`, throws a `RangeError` that names the value.
+
+`shout(text)` in `src/shout.js` returns `text` upper-cased followed by `"!"`, e.g. `shout("hello")` returns `"HELLO!"`.
